@@ -1,0 +1,337 @@
+$bgColor: #ffffff;
+$text: #1b1c21;
+$btnColor: #ff3e79;
+$textTwo: #7e7e82;
+$colorBullet: #dddddd;
+$colorBulletActive: #b5b6bc;
+$border: #eaeaea;
+
+.technic {
+  .technic__underline {
+    min-width: 320px;
+    height: 1px;
+    background-color: #d9fff5;
+  }
+
+  .technic__title-container {
+    margin-top: -13px;
+    width: 100%;
+    min-height: 56px;
+    background: linear-gradient(90deg, #f8f8f8 0%, #fff 100%);
+    margin-bottom: 16px;
+    position: relative;
+  }
+
+  @media (min-width: 768px) {
+    .technic__title-container {
+      margin-bottom: 24px;
+    }
+  }
+
+  .technic__title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: $textTwo;
+    padding-top: 16px;
+    margin-bottom: 32px;
+    padding: 15px 16px;
+  }
+
+  @media (min-width: 768px) {
+    .technic__title {
+      padding-left: 24px;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .technic__title {
+      padding-left: 32px;
+    }
+  }
+
+  .technic__title-container::after {
+    content: ' ';
+    height: 185px;
+    width: 64px;
+    position: absolute;
+    right: 0;
+    top: 110px;
+    background: linear-gradient(
+      270deg,
+      #f8f8f8 16.84%,
+      rgba(248, 248, 248, 0.0001) 100%
+    );
+    z-index: 100;
+  }
+
+  @media (min-width: 348px) {
+    .technic__title-container::after {
+      top: 70px;
+    }
+  }
+
+  @media (min-width: 380px) {
+    .technic__title-container::after {
+      width: 94px;
+    }
+  }
+
+  @media (min-width: 410px) {
+    .technic__title-container::after {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  .technic__swiper {
+    width: 240px;
+    margin: 0;
+    overflow: visible;
+    margin: 0 16px;
+  }
+
+  @media (min-width: 550px) {
+    .technic__swiper {
+      display: none;
+    }
+  }
+
+  .technic__swiper-pagination {
+    position: static;
+    padding-left: 0;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: 550px) {
+    .technic__swiper-pagination {
+      display: none;
+    }
+  }
+
+  .swiper-pagination .swiper-pagination-bullet {
+    background-color: $colorBullet;
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: $colorBulletActive;
+  }
+
+  .technic__card-tech {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 160px;
+    border: 1px solid $border;
+    border-radius: 7px;
+    background: $bgColor;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: 550px) {
+    .technic__card-tech {
+      width: 100%;
+    }
+  }
+
+  .technic__card-button {
+    width: 40px;
+    height: 40px;
+    border: 2px solid $btnColor;
+    border-radius: 50%;
+    background: url(../img/button_img.png) no-repeat center;
+    margin-right: 16px;
+    align-self: flex-end;
+    margin-bottom: 16px;
+  }
+
+  .technic__card-text {
+    padding-left: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    color: $text;
+    align-self: flex-start;
+  }
+
+  .technic__cards {
+    display: none;
+  }
+
+  @media (min-width: 550px) {
+    .technic__cards {
+      display: block;
+    }
+  }
+
+  .technic__wrapper {
+    padding: 0 16px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+
+  @media (min-width: 768px) {
+    .technic__wrapper {
+      padding: 0 24px;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .technic__wrapper {
+      padding: 0 32px;
+      column-gap: 32px;
+    }
+  }
+
+  .technic__slide {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    width: 240px;
+  }
+
+  @media (min-width: 768px) {
+    .technic__slide {
+      width: 224px;
+    }
+  }
+
+  @media (min-width: 1220px) {
+    .technic__slide {
+      width: 240px;
+    }
+  }
+
+  @media (min-width: 1343px) {
+    .technic__slide {
+      width: 260px;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .technic__slide {
+      width: 224px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .technic__slide {
+      width: 240px;
+    }
+  }
+
+  .none {
+    display: none;
+  }
+
+  .technic__show-button {
+    position: relative;
+    font-weight: 500;
+    padding-left: 33px;
+    padding-top: 8px;
+    margin-left: 16px;
+    margin-bottom: 32px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .technic__show-button:hover {
+    transform: scale(1.05);
+  }
+
+  @media (min-width: 768px) {
+    .technic__show-button {
+      margin-left: 24px;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .technic__show-button {
+      margin-left: 32px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .technic__show-button::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: url(../img/show-more.svg) no-repeat;
+  }
+
+  .technic__show-button--active {
+    position: relative;
+    font-weight: 500;
+    padding-left: 33px;
+    padding-top: 8px;
+    margin-left: 16px;
+    margin-bottom: 32px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .technic__show-button--active:hover {
+    transform: scale(1.05);
+  }
+
+  @media (min-width: 768px) {
+    .technic__show-button--active {
+      margin-left: 24px;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .technic__show-button--active {
+      margin-left: 32px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .technic__show-button--active::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: url(../img/show-more.svg) no-repeat;
+    transform: rotate(180deg);
+  }
+
+  .technic__none {
+    display: block;
+  }
+
+  .technic_visible {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .technic__none {
+      display: none;
+    }
+
+    .technic_visible {
+      display: block;
+    }
+  }
+
+  @media (min-width: 1016px) {
+    .technic__none {
+      display: block;
+    }
+
+    .technic_visible {
+      display: none;
+    }
+  }
+}

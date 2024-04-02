@@ -1,0 +1,371 @@
+$bgColor: #ffffff;
+$underline: #d9fff5;
+$borderTwo: #b8ffec;
+$textTwo: #7e7e82;
+$beforTitle: #41f6d7;
+$btnColor: #ff3e79;
+
+.main {
+  .main__container {
+    padding: 0 16px;
+    max-width: 1120px;
+  }
+
+  @media (min-width: 768px) {
+    .main__container {
+      padding: 0 24px;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .main__container {
+      padding: 0 32px;
+    }
+  }
+
+  .main__info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: 768px) {
+    .main__info {
+      margin-bottom: 42px;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .main__info {
+      margin-top: 42px;
+      margin-bottom: 10px;
+      width: 985px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .main__info {
+      width: 100%;
+    }
+  }
+
+  .main__title {
+    position: relative;
+    font-size: 28px;
+    letter-spacing: -0.6px;
+    line-height: 40%;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 10px;
+  }
+
+  .main__title::after {
+    position: absolute;
+    content: '';
+    top: -6px;
+    left: -16px;
+    width: 4px;
+    height: 40px;
+    background-color: $beforTitle;
+    border-radius: 0 4px 4px 0;
+  }
+
+  @media (min-width: 768px) {
+    .main__title::after {
+      left: -24px;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .main__title {
+      margin-bottom: 8px;
+    }
+
+    .main__title::after {
+      left: -32px;
+    }
+  }
+
+  .main__btn {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 32px;
+  }
+
+  @media (max-width: 1365px) {
+    .main__btn {
+      display: none;
+    }
+  }
+
+  .main__repair-btn {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  .main__checkstatus-btn {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  .main__menu {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .main__menu-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    column-gap: 8px;
+    overflow: scroll;
+    margin: 0;
+    height: 62px;
+  }
+
+  @media (min-width: 1366px) {
+    .main__menu-list {
+      overflow: visible;
+      flex-wrap: wrap;
+      height: 46px;
+      margin-bottom: 52px;
+    }
+  }
+
+  .main__menu-list::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .main__menu-item {
+    text-align: center;
+    white-space: nowrap;
+    color: $textTwo;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    padding: 8px 16px 0 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .main__menu-item:hover {
+    border: 2px solid $btnColor;
+    border-radius: 6px;
+    background-color: $bgColor;
+    opacity: 0.6;
+  }
+
+  @media (min-width: 1366px) {
+    .main__menu-item {
+      padding-bottom: 8px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .main__menu-item:first-child {
+    border: 2px solid $borderTwo;
+    border-radius: 6px;
+    background-color: $bgColor;
+  }
+
+  .main__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: 768px) {
+    .main__content {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin-bottom: 32px;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .main__content {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin-bottom: 51px;
+    }
+  }
+
+  .main__content-group {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    padding: 0 16px;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: 768px) {
+    .main__content-group {
+      width: 362px;
+      line-height: 20px;
+      padding: 0 24px;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    .main__content-group {
+      width: 462px;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .main__content-group {
+      width: 562px;
+      line-height: 20px;
+      padding: 0 32px;
+    }
+  }
+
+  .main__content-block3 {
+    display: none;
+  }
+
+  @media (min-width: 1366px) {
+    .main__content-block3 {
+      display: block;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1365px) {
+    .main__content-block3 {
+      display: block;
+    }
+
+    .main__content-none {
+      display: none;
+    }
+  }
+
+  .none {
+    display: none;
+  }
+
+  .noneTwo {
+    display: none;
+  }
+
+  .main__content-button {
+    display: block;
+    position: relative;
+    font-weight: 500;
+    padding-left: 33px;
+    padding-top: 8px;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .main__content-button:hover {
+    transform: scale(1.05);
+  }
+
+  .main__content-button::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: url(../img/btn-dalee.svg) no-repeat;
+  }
+
+  .main__content-button--active {
+    position: relative;
+    font-weight: 500;
+    padding-left: 33px;
+    padding-top: 8px;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .main__content-button--active:hover {
+    transform: scale(1.05);
+  }
+
+  .main__content-button--active::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: url(../img/btn-dalee.svg) no-repeat;
+    transform: rotate(180deg);
+  }
+
+  .main__content-img {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .main__content-img {
+      display: block;
+      max-width: 370px;
+      height: 100%;
+      padding: 15px 24px 0 0;
+    }
+  }
+
+  @media (min-width: 820px) {
+    .main__content-img {
+      max-width: 470px;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .main__content-img {
+      max-width: 570px;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .main__content-img {
+      max-width: 520px;
+      padding-right: 100px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .main__content-img {
+      max-width: 520px;
+      padding-right: 32px;
+    }
+  }
+
+  .main__underline {
+    min-width: 320px;
+    height: 1px;
+    background-color: $underline;
+  }
+
+  @media (min-width: 1366px) {
+    .main__underline {
+      display: none;
+    }
+  }
+
+  .main__repair-description {
+    transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  .main__repair-description:hover {
+    opacity: 0.8;
+    color: $btnColor;
+  }
+
+  .main__checkstatus-description {
+    transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  .main__checkstatus-description:hover {
+    opacity: 0.8;
+    color: $btnColor;
+  }
+}

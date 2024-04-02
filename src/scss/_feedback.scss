@@ -1,0 +1,160 @@
+$bgColor: #ffffff;
+$btnColor: #ff3e79;
+$textTwo: #7e7e82;
+$border: #eaeaea;
+$beforTitle: #41f6d7;
+
+.feedback {
+  .feedback__container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    width: 320px;
+    height: 100vh;
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
+      -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+    background-color: #ffffff;
+    z-index: 102;
+  }
+
+  @media (min-width: 1366px) {
+    .feedback__container {
+      width: 440px;
+    }
+  }
+
+  .feedback__burger-btn {
+    margin: 24px 0 40px 16px;
+  }
+
+  @media (min-width: 1366px) {
+    .feedback__burger-btn {
+      position: relative;
+      right: 80px;
+      margin-top: 32px;
+    }
+  }
+
+  .feedback__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: -0.6px;
+    padding-left: 16px;
+    margin-bottom: 24px;
+    margin-top: 0;
+  }
+
+  @media (min-width: 1366px) {
+    .feedback__title {
+      margin-top: -76px;
+      padding-left: 32px;
+    }
+  }
+
+  .feedback__title::before {
+    position: absolute;
+    content: '';
+    top: 103px;
+    left: 0;
+    width: 4px;
+    height: 40px;
+    background-color: $beforTitle;
+    border-radius: 0 4px 4px 0;
+  }
+
+  @media (min-width: 1366px) {
+    .feedback__title::before {
+      top: 32px;
+    }
+  }
+
+  .feedback__form-input {
+    width: 288px;
+    height: 48px;
+    margin-left: 16px;
+    border: 1px solid $border;
+    border-radius: 8px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: 1366px) {
+    .feedback__form-input {
+      margin-left: 32px;
+      width: 376px;
+    }
+  }
+
+  .feedback__form-message {
+    width: 288px;
+    height: 118px;
+    margin-left: 16px;
+    border: 1px solid $border;
+    border-radius: 8px;
+    padding-left: 16px;
+    padding-top: 12px;
+  }
+
+  @media (min-width: 1366px) {
+    .feedback__form-message {
+      margin-left: 32px;
+      width: 376px;
+    }
+  }
+
+  .feedback__description {
+    margin-left: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: $textTwo;
+  }
+
+  @media (min-width: 1366px) {
+    .feedback__description {
+      margin-left: 32px;
+      width: 376px;
+    }
+  }
+
+  .feedback__description-important {
+    color: $btnColor;
+  }
+
+  .feedback__btn {
+    width: 136px;
+    height: 32px;
+    border: 1px solid $btnColor;
+    border-radius: 20px;
+    background-color: $btnColor;
+    margin-left: 168px;
+  }
+
+  @media (min-width: 1366px) {
+    .feedback__btn {
+      margin-left: 272px;
+    }
+  }
+
+  .feedback__text-btn {
+    position: relative;
+    padding-right: 12px;
+    font-size: 12px;
+    letter-spacing: -0.15px;
+    line-height: 200%;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $bgColor;
+  }
+
+  .feedback__text-btn::after {
+    content: '';
+    position: absolute;
+    background: url(../img/goside.svg) no-repeat;
+    width: 24px;
+    height: 24px;
+    z-index: 10;
+  }
+}

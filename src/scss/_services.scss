@@ -1,0 +1,340 @@
+$btnColor: #ff3e79;
+$textTwo: #7e7e82;
+$border: #eaeaea;
+$bgColor: #ffffff;
+$colorBullet: #dddddd;
+$colorBulletActive: #b5b6bc;
+
+.services {
+  .services__underline {
+    min-width: 320px;
+    height: 1px;
+    background-color: #d9fff5;
+  }
+
+  .services__title-container {
+    margin-top: -13px;
+    width: 100%;
+    min-height: 56px;
+    background: linear-gradient(90deg, #f8f8f8 0%, #fff 100%);
+    margin-bottom: 16px;
+    position: relative;
+  }
+
+  @media (min-width: 768px) {
+    .services__title-container {
+      margin-bottom: 24px;
+    }
+  }
+
+  .services__title-container::after {
+    content: ' ';
+    height: 220px;
+    width: 64px;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    background: linear-gradient(
+      270deg,
+      #f8f8f8 16.84%,
+      rgba(248, 248, 248, 0.0001) 100%
+    );
+    z-index: 100;
+  }
+
+  @media (min-width: 348px) {
+    .services__title-container::after {
+      top: 70px;
+    }
+  }
+
+  @media (min-width: 380px) {
+    .services__title-container::after {
+      width: 94px;
+    }
+  }
+
+  @media (min-width: 410px) {
+    .services__title-container::after {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  .services__title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: $textTwo;
+    padding-top: 16px;
+    margin-bottom: 32px;
+    padding: 15px 16px;
+  }
+
+  @media (min-width: 768px) {
+    .services__title {
+      padding-left: 24px;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .services__title {
+      padding-left: 32px;
+    }
+  }
+
+  .services__swiper {
+    margin: 0;
+    overflow: visible;
+    padding: 0 16px;
+    width: 260px;
+  }
+
+  @media (min-width: 550px) {
+    .services__swiper {
+      display: none;
+    }
+  }
+
+  .services__swiper-pagination {
+    position: static;
+    padding-left: 0;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: 768px) {
+    .services__swiper-pagination {
+      display: none;
+    }
+  }
+
+  .swiper-pagination .swiper-pagination-bullet {
+    background-color: $colorBullet;
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: $colorBulletActive;
+  }
+
+  .services__cards {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    border: 1px solid $border;
+    border-radius: 7px;
+    background: $bgColor;
+    margin-bottom: 16px;
+    padding: 5px 0 16px 16px;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: 0.2px;
+  }
+
+  .services__card-title {
+    color: $textTwo;
+    margin-bottom: -10px;
+    line-height: 114%;
+    font-weight: 500;
+    letter-spacing: 0;
+    opacity: 0.72;
+  }
+
+  .services__card-button {
+    display: block;
+    position: absolute;
+    right: -5px;
+    bottom: 30px;
+    width: 119px;
+    height: 32px;
+    border: 1px solid $btnColor;
+    border-radius: 20px;
+    background-color: $btnColor;
+  }
+
+  .services__text-button {
+    position: relative;
+    padding-right: 12px;
+    font-size: 12px;
+    letter-spacing: -0.15px;
+    line-height: 200%;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $bgColor;
+  }
+
+  .services__text-button::after {
+    content: '';
+    position: absolute;
+    background: url(../img/goside.svg) no-repeat;
+    width: 24px;
+    height: 24px;
+    z-index: 10;
+  }
+
+  @media (min-width: 768px) {
+    .services__text-button::after {
+      top: -4px;
+    }
+  }
+
+  .services__table {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .services__table {
+      display: block;
+      margin: 0 24px;
+    }
+  }
+
+  @media (min-width: 1366px) and (max-width: 1440px) {
+    .services__table {
+      width: 89%;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .services__table {
+      display: block;
+      margin: 0 32px;
+    }
+  }
+
+  .services__table-container {
+    background-color: $bgColor;
+    padding: 16px;
+    margin-bottom: 24px;
+    border-radius: 10px;
+  }
+
+  @media (min-width: 1440px) {
+    .services__table-container {
+      padding-left: 24px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .services__row-underline {
+    min-width: 688px;
+    height: 1px;
+    background-color: $border;
+    margin-bottom: 16px;
+  }
+
+  .services__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .services__row:last-child {
+    margin-bottom: 0;
+  }
+
+  .services__column {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: 0.2px;
+  }
+
+  .services__column:first-child {
+    min-width: 348px;
+  }
+
+  .services__column:nth-child(2) {
+    min-width: 74px;
+  }
+
+  .services__column:nth-child(3) {
+    min-width: 81px;
+  }
+
+  .services__header {
+    padding: 0 16px;
+  }
+
+  .services__header {
+    padding-left: 24px;
+  }
+
+  .services__header .services__column {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: $textTwo;
+    opacity: 0.72;
+  }
+
+  .services__btn-none {
+    width: 119px;
+    height: 32px;
+    margin-bottom: 16px;
+  }
+
+  .services__column-button {
+    width: 119px;
+    height: 32px;
+    border: 1px solid $btnColor;
+    border-radius: 20px;
+    background-color: $btnColor;
+    line-height: 200%;
+    letter-spacing: -0.15px;
+  }
+
+  .services__description {
+    width: 421px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.01em;
+    margin-bottom: 16px;
+  }
+
+  .services__button-offer {
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  .services__button-offer::after {
+    content: '';
+    width: 300px;
+    height: 2px;
+    background: $btnColor;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .services__button-offer:hover::after {
+    transform: scale(1);
+  }
+
+  .services__text-offer {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02px;
+  }
+
+  .services__text-offer::after {
+    content: '';
+    position: absolute;
+    background: url(../img/offer.svg) no-repeat;
+    width: 24px;
+    height: 24px;
+  }
+}
